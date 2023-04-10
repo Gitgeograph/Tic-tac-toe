@@ -31,7 +31,7 @@ def player_input(cell):
         else:
             cell[x][y] = 'x'
         break
-    return cell[x][y]
+    return x, y
 
 
 def move_computer(cell):
@@ -44,7 +44,7 @@ def move_computer(cell):
             cell[x][y] = 'o'
         break
 
-    return cell[x][y]
+    return x, y
 
 
 def win(cell, val):
