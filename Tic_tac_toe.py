@@ -71,6 +71,7 @@ def greet():
     print(" x - номер строки  ")
     print(" y - номер столбца ")
 
+         
 def start(board):
     count = 0
     greet()
