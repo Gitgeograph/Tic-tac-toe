@@ -1,8 +1,6 @@
 from random import randint
 
 
-print("*" * 10, "Крестики-нолики", "*" * 10)
-
 board = [['-', '-', '-'],
          ['-', '-', '-'],
          ['-', '-', '-']]
@@ -63,8 +61,19 @@ def win(cell, val):
     return False
 
 
+def greet():
+    print("-------------------")
+    print("  Приветсвуем вас  ")
+    print("      в игре       ")
+    print("  крестики-нолики  ")
+    print("-------------------")
+    print(" формат ввода: x y ")
+    print(" x - номер строки  ")
+    print(" y - номер столбца ")
+
 def start(board):
     count = 0
+    greet()
     while True:
         print_board(board)
         if count % 2 == 0:
